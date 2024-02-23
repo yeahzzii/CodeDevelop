@@ -58,13 +58,13 @@ function addFruit() {
     render: {
       sprite: { texture: `${fruit.name}.png`}
     },
-    restitution: 0.3, 
+    restitution: 0.3,   
   });
 
   currentBody = body;
   currentFruit = fruit;
 
-  World.add(world, body)
+  World.add(world, body);
 }
 
 window.onkeydown = (event) => {
